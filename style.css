@@ -1,0 +1,283 @@
+
+body {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  background: white;
+  color: gray;
+  line-height: 1.7;
+}
+
+body.locked {
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: gray;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  z-index: 100;
+  transition: transform 0.8s;
+}
+
+.cover.buka {
+  transform: translateY(-100%);
+}
+
+.cover h1 {
+  font-size: 3.5rem;
+  margin: 10px 0;
+}
+
+.cover .kecil {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.cover .tgl {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.cover .tamu {
+  margin-bottom: 25px;
+}
+
+.cover .tamu strong {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.garis-emas {
+  width: 60px;
+  height: 2px;
+  background: burlywood;
+  margin-bottom: 25px;
+}
+
+.amp {
+  color: burlywood;
+  font-style: italic;
+}
+
+.btn {
+  background: burlywood;
+  color: white;
+  border: 2px solid burlywood;
+  border-radius: 30px;
+  padding: 10px 28px;
+  font-family: 'Jost', sans-serif;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: burlywood;
+  border-color: burlywood;
+  color: green;
+}
+
+.btn.garis {
+  background: transparent;
+  color: green;
+  border: 2px solid green;
+}
+
+.btn.garis:hover {
+  background: green;
+  color: white;
+}
+
+.hero {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+}
+
+.ayat {
+  font-style: italic;
+  max-width: 500px;
+  margin: 30px auto 0;
+}
+
+.pasangan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.pasangan .amp {
+  font-size: 3rem;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.ortu {
+  font-size: 0.95rem;
+  color: green;
+}
+
+.hitung {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hitung div {
+  background: green;
+  color: white;
+  width: 75px;
+  padding: 15px 5px;
+  border-radius: 10px;
+}
+
+.hitung b {
+  display: block;
+  font-size: 1.8rem;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.hitung span {
+  font-size: 0.8rem;
+}
+
+.acara {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.kartu {
+  border: 1px solid burlywood;
+  padding: 25px;
+  border-radius: 10px;
+  width: 300px;
+  background: white;
+}
+
+.jam {
+  color: burlywood;
+  font-weight: 500;
+}
+
+
+.rsvp {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.rsvp label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 3px;
+}
+
+.rsvp input,
+.rsvp select,
+.rsvp textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 6px;
+  font-family: 'Jost', sans-serif;
+}
+
+.rsvp textarea {
+  height: 100px;
+}
+
+.rsvp button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+.hasil {
+  margin-top: 30px;
+}
+
+.ucapan {
+  background: white;
+  border-left: 3px solid burlywood;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.ucapan strong {
+  display: block;
+}
+
+.ucapan small {
+  color: #888;
+}
+
+
+footer {
+  background: gray;
+  color: greenyellow;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+footer h2 {
+  color: white;
+  margin: 20px 0 10px;
+}
+
+
+@media (max-width: 480px) {
+  .cover h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero h2 {
+    font-size: 2.4rem;
+  }
+
+  .hitung {
+    gap: 8px;
+  }
+
+  .hitung div {
+    width: 65px;
+  }
+}
